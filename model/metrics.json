@@ -1,0 +1,93 @@
+{
+  "dataset": "UCI Online Shoppers Purchasing Intention (id 468)",
+  "n_rows_after_dedup": 12205,
+  "n_train": 9764,
+  "n_test": 2441,
+  "test_positive_rate": 0.15649324047521507,
+  "random_state": 2026,
+  "models": {
+    "logistic_regression": {
+      "display_name": "Logistic Regression",
+      "best_params": {
+        "C": 0.05,
+        "class_weight": "balanced"
+      },
+      "cv_f1": 0.6479772697984547,
+      "test_metrics": {
+        "Accuracy": 0.8803768947152806,
+        "AUC": 0.9317922338145137,
+        "Precision": 0.5858778625954199,
+        "Recall": 0.8036649214659686,
+        "F1": 0.6777041942604857,
+        "MCC": 0.617886915159352
+      }
+    },
+    "decision_tree": {
+      "display_name": "Decision Tree",
+      "best_params": {
+        "class_weight": null,
+        "criterion": "entropy",
+        "max_depth": 6,
+        "min_samples_leaf": 30
+      },
+      "cv_f1": 0.6383626814223857,
+      "test_metrics": {
+        "Accuracy": 0.9012699713232282,
+        "AUC": 0.9348168810661404,
+        "Precision": 0.7296416938110749,
+        "Recall": 0.5863874345549738,
+        "F1": 0.6502177068214804,
+        "MCC": 0.598338611978169
+      }
+    },
+    "knn": {
+      "display_name": "KNN",
+      "best_params": {
+        "n_neighbors": 11,
+        "p": 2,
+        "weights": "uniform"
+      },
+      "cv_f1": 0.5997833540074806,
+      "test_metrics": {
+        "Accuracy": 0.9033183121671446,
+        "AUC": 0.9056428297170639,
+        "Precision": 0.7534722222222222,
+        "Recall": 0.5680628272251309,
+        "F1": 0.6477611940298508,
+        "MCC": 0.6009539505871854
+      }
+    },
+    "naive_bayes": {
+      "display_name": "Naive Bayes",
+      "best_params": {
+        "var_smoothing": 0.1
+      },
+      "cv_f1": 0.5168508802670859,
+      "test_metrics": {
+        "Accuracy": 0.7668988119623106,
+        "AUC": 0.8718218318758915,
+        "Precision": 0.38882282996432815,
+        "Recall": 0.856020942408377,
+        "F1": 0.5347506132461161,
+        "MCC": 0.46360750335170137
+      }
+    },
+    "svm": {
+      "display_name": "Support Vector Machine",
+      "best_params": {
+        "C": 0.5,
+        "class_weight": "balanced",
+        "gamma": 0.01
+      },
+      "cv_f1": 0.664935947471534,
+      "test_metrics": {
+        "Accuracy": 0.9008603031544449,
+        "AUC": 0.9324584444743929,
+        "Precision": 0.7258064516129032,
+        "Recall": 0.5890052356020943,
+        "F1": 0.6502890173410405,
+        "MCC": 0.597651905647663
+      }
+    }
+  }
+}

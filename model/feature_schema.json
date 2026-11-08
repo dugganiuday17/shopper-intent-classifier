@@ -1,0 +1,40 @@
+{
+  "target": "Revenue",
+  "numeric": [
+    "Administrative",
+    "Administrative_Duration",
+    "Informational",
+    "Informational_Duration",
+    "ProductRelated",
+    "ProductRelated_Duration",
+    "BounceRates",
+    "ExitRates",
+    "PageValues",
+    "SpecialDay"
+  ],
+  "categorical": [
+    "Month",
+    "OperatingSystems",
+    "Browser",
+    "Region",
+    "TrafficType",
+    "VisitorType"
+  ],
+  "binary": [
+    "Weekend"
+  ],
+  "model_files": {
+    "logistic_regression": "logistic_regression.joblib",
+    "decision_tree": "decision_tree.joblib",
+    "knn": "knn.joblib",
+    "naive_bayes": "naive_bayes.joblib",
+    "svm": "svm.joblib"
+  },
+  "display_names": {
+    "logistic_regression": "Logistic Regression",
+    "decision_tree": "Decision Tree",
+    "knn": "KNN",
+    "naive_bayes": "Naive Bayes",
+    "svm": "Support Vector Machine"
+  }
+}
